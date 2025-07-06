@@ -13,6 +13,13 @@ Apple Macbook Air M1
 
 [Source code](1%20exa%20operation%20with%20memory%20access.py) 1e8 loop with 1e8 global size.  1 exa operation.
 
+
+|  | execution time |
+| -------- | ------- |
+| with memory access | 0m4.861s |
+| without memory access | 0m3.488s |
+
+
 ![](https://computationalmodelling.bitbucket.io/tools/PyOpenCL/opencl_logo.jpg)
 
 ![](https://www.python.org/static/img/psf-logo.png)
