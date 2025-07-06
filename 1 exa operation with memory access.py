@@ -4,13 +4,8 @@
 # $env:PYOPENCL_CTX='0'
 
 # 1 exa operation
-# runs for less than 1 min and 40 seconds assuming 10 peta operations per second on GPU
-# no memory access, internal kernel variable gid
-
-# Processor	13th Gen Intel(R) Core(TM) i3-1315U, 1200 Mhz, 6 Core(s), 8 Logical Processor(s)
-# https://www.intel.com/content/www/us/en/products/sku/233459/intel-core-i31315u-processor-10m-cache-up-to-4-50-ghz-with-ipu/specifications.html
-# GPU 1.25GHz
-# EUs 64
+# runs for less than 5 seconds assuming 280 peta operations per second on GPU
+# memory access of input argument a[gid]
 
 import pyopencl as cl
 import numpy as np
@@ -47,15 +42,15 @@ __kernel void add_arrays(__global const int *a, __global const int *b, __global 
     for(i=0; i<(short)(1e4); i++)
       for(j=0; j<(short)(1e4); j++);
     
-    // int i;  // 32-bit
-    // for(i=0; i<1e4; i++);
+    //int i;  // 32-bit
+    //for(i=0; i<1e8; i++);
 
     //long i; // 64-bit
     //for(i=0; i<1e9; i++);
       
-    //result[gid] = a[gid] + i*j; // assign memory
+    result[gid] = a[gid] + i*j; // assign memory
     //result[gid] = gid + i; 
-    result[gid] = gid + i*j;
+    //result[gid] = gid + i*j;
 }
 """
 
