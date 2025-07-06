@@ -115,8 +115,9 @@ RTX 5090 3.352 peta flops (fp4)
 
 1 peta  = 100 million * 10 million
 10 peta = 100 million * 100 million
+1 exa is 100 (on CPU) * 10 peta
 
-100 million 1e8 memory UINT32 (400MB)
+100 million 1e8 memory UINT32 (400MB) global size
 100 million 1e8 loop - 45 operations + 9 (in systolic array but not scalar GPU with data type)
 
 systolic array
