@@ -26,8 +26,7 @@ Microsoft PowerShell Python Output
 [Source code](1%20exa%20operation.py) 1e8 loop with 1e8 global size.  1 exa operation.
 
 Apple Macbook Air M1
-![](images/Screenshot%202025-07-06%20at%2012.19.03%20PM.png)
-![](images/Screenshot 2025-07-06 at 12.19.03 PM.png)
+![](https://raw.githubusercontent.com/khalidjshaikh/20250615-opencl/refs/heads/main/images/Screenshot%202025-07-06%20at%2012.19.03%E2%80%AFPM.png)
 
 ![](https://computationalmodelling.bitbucket.io/tools/PyOpenCL/opencl_logo.jpg)
 
