@@ -18,7 +18,7 @@ over 400MB deallocated
 ![](https://raw.githubusercontent.com/khalidjshaikh/20250615-opencl/refs/heads/main/images/Screenshot%202025-07-06%20112950.png)
 
 Microsoft PowerShell Python Output
-![](images\images\Screenshot%202025-07-06%20114110.png)
+![](https://raw.githubusercontent.com/khalidjshaikh/20250615-opencl/refs/heads/main/images/Screenshot%202025-07-06%20114110.png)
 
 ![](https://computationalmodelling.bitbucket.io/tools/PyOpenCL/opencl_logo.jpg)
 
