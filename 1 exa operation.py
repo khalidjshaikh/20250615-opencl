@@ -53,9 +53,9 @@ __kernel void add_arrays(__global const int *a, __global const int *b, __global 
     //long i; // 64-bit
     //for(i=0; i<1e9; i++);
       
-    //result[gid] = a[gid]; // assign memory
+    result[gid] = a[gid] + i*j; // assign memory
     //result[gid] = gid + i; 
-    result[gid] = gid + i*j;
+    //result[gid] = gid + i*j;
 }
 """
 
@@ -65,12 +65,11 @@ program = cl.Program(ctx, kernel_code).build()
 # 6. Execute Kernel
 global_size = a.shape
 
-# Loop 1 peta op on GPU
+# Loop 10 peta op on GPU
 for i in range(int(1e2)): # 1e0 1e1 1e2
   program.add_arrays(queue, global_size, None, a_buf, b_buf, result_buf)
   # 7. Read Results Back
   cl.enqueue_copy(queue, result, result_buf)
-
 
 # 8. Print Results
 print("Input A:", a)
