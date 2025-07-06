@@ -27,6 +27,21 @@ Input A: [1 2 3 4]
 Input B: [5 6 7 8]
 Result: [ 6  8 10 12]
 
+time python3 count\ to\ 1\ trillion.py 
+Choosing only available device: <pyopencl.Device 'Apple M1' on 'Apple' at 0x1027f00>
+Counter value: 1
+
+real	0m27.182s
+user	0m0.494s
+sys	0m0.408s
+
+node
+Welcome to Node.js v24.3.0.
+Type ".help" for more information.
+> 1e12/27 * 1e-9
+37.037037037037045
+
+
 ---
 
 python3 Chess.py 
