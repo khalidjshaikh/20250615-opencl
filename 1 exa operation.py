@@ -3,7 +3,8 @@
 
 # $env:PYOPENCL_CTX='0'
 
-# 10 peta operation per second
+# 1 exa operation
+# runs for less than 1 min and 40 seconds assuming 10 peta operations per second on GPU
 # no memory access, internal kernel variable gid
 
 # Processor	13th Gen Intel(R) Core(TM) i3-1315U, 1200 Mhz, 6 Core(s), 8 Logical Processor(s)
@@ -51,7 +52,7 @@ __kernel void add_arrays(__global const int *a, __global const int *b, __global 
     // int i;  // 32-bit
     // for(i=0; i<1e4; i++);
 
-    //long i;  // 64-bit
+    //long i; // 64-bit
     //for(i=0; i<1e9; i++);
       
     //result[gid] = a[gid]; // assign memory
@@ -66,9 +67,12 @@ program = cl.Program(ctx, kernel_code).build()
 # 6. Execute Kernel
 global_size = a.shape
 
-program.add_arrays(queue, global_size, None, a_buf, b_buf, result_buf)
-# 7. Read Results Back
-cl.enqueue_copy(queue, result, result_buf)
+# Loop 1 peta op on GPU
+for i in range(int(1e2)): # 1e0 1e1 1e2
+  program.add_arrays(queue, global_size, None, a_buf, b_buf, result_buf)
+  # 7. Read Results Back
+  cl.enqueue_copy(queue, result, result_buf)
+
 
 # 8. Print Results
 print("Input A:", a)
