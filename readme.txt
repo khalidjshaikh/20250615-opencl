@@ -16,6 +16,29 @@ Choosing only available device: <pyopencl.Device 'Apple M1' on 'Apple' at 0x1027
 Input array: [0. 1. 2. 3. 4. 5. 6. 7. 8. 9.]
 Output array: [ 0.  1.  4.  9. 16. 25. 36. 49. 64. 81.]
 
+python3 opencl\ buffer\ 1d.py 
+Choosing only available device: <pyopencl.Device 'Apple M1' on 'Apple' at 0x1027f00>
+[0 0 0 0 0]
+Data from OpenCL buffer: [1 2 3 4 5]
+
+python3 add\ arrays\ 1d.py 
+Choosing only available device: <pyopencl.Device 'Apple M1' on 'Apple' at 0x1027f00>
+Input A: [1 2 3 4]
+Input B: [5 6 7 8]
+Result: [ 6  8 10 12]
+
+---
+
+python3 Chess.py 
+g1h3
+r n b q k b n r
+p p p p p p p p
+. . . . . . . .
+. . . . . . . .
+. . . . . . . .
+. . . . . . . .
+P P P P P P P P
+R N B Q K B N R
 
 ---
 
