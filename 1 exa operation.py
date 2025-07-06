@@ -53,9 +53,9 @@ __kernel void add_arrays(__global const int *a, __global const int *b, __global 
     //long i; // 64-bit
     //for(i=0; i<1e9; i++);
       
-    result[gid] = a[gid] + i*j; // assign memory
+    //result[gid] = a[gid] + i*j; // assign memory
     //result[gid] = gid + i; 
-    //result[gid] = gid + i*j;
+    result[gid] = gid + i*j;
 }
 """
 
