@@ -11,11 +11,11 @@ https://www.intel.com/content/www/us/en/products/sku/233459/intel-core-i31315u-p
 
 Rising edge,
 over 400MB allocated
-![](https://raw.githubusercontent.com/khalidjshaikh/20250615-opencl/refs/heads/main/images/Screenshot%202025-07-06%20112950.png)
+![](https://raw.githubusercontent.com/khalidjshaikh/20250615-opencl/refs/heads/main/images/Screenshot%202025-07-06%20113100.png)
 
 Falling edge,
 over 400MB deallocated
-![](https://raw.githubusercontent.com/khalidjshaikh/20250615-opencl/refs/heads/main/images/Screenshot%202025-07-06%20113100.png)
+![](https://raw.githubusercontent.com/khalidjshaikh/20250615-opencl/refs/heads/main/images/Screenshot%202025-07-06%20112950.png)
 
 Microsoft PowerShell Python Output
 ![](images\images\Screenshot%202025-07-06%20114110.png)
