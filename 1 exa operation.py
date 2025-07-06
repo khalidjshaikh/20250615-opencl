@@ -44,10 +44,8 @@ __kernel void add_arrays(__global const int *a, __global const int *b, __global 
     
     short i;  // 16-bit
     short j;
-    short k;
     for(i=0; i<(short)(1e4); i++)
       for(j=0; j<(short)(1e4); j++);
-    //    for(k=0; k<1; k++);
     
     // int i;  // 32-bit
     // for(i=0; i<1e4; i++);
@@ -56,8 +54,8 @@ __kernel void add_arrays(__global const int *a, __global const int *b, __global 
     //for(i=0; i<1e9; i++);
       
     //result[gid] = a[gid]; // assign memory
-    result[gid] = gid + i; 
-    //result[gid] = gid + i*j;
+    //result[gid] = gid + i; 
+    result[gid] = gid + i*j;
 }
 """
 
