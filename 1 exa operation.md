@@ -35,3 +35,5 @@ Apple Macbook Air M1
 ![](https://upload.wikimedia.org/wikipedia/commons/6/64/Intel-logo-2022.png)
 
 ![](https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg)
+
+![](https://1000logos.net/wp-content/uploads/2016/10/Apple-Logo.png)
