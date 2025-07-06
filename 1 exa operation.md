@@ -7,6 +7,9 @@ GPU 1.25GHz
 EUs 64
 Microsoft Windows 11 (Build 10.0.26100.4202)
 
+10 petaops on Intel i3-1315U
+280 petaops on Apple Macbook Air M1.
+
 https://www.intel.com/content/www/us/en/products/sku/233459/intel-core-i31315u-processor-10m-cache-up-to-4-50-ghz-with-ipu/specifications.html
 
 Rising edge,
@@ -21,6 +24,10 @@ Microsoft PowerShell Python Output
 ![](https://raw.githubusercontent.com/khalidjshaikh/20250615-opencl/refs/heads/main/images/Screenshot%202025-07-06%20120321.png)
 
 [Source code](1%20exa%20operation.py) 1e8 loop with 1e8 global size.  1 exa operation.
+
+Apple Macbook Air M1
+![](images/Screenshot%202025-07-06%20at%2012.19.03%20PM.png)
+![](images/Screenshot 2025-07-06 at 12.19.03 PM.png)
 
 ![](https://computationalmodelling.bitbucket.io/tools/PyOpenCL/opencl_logo.jpg)
 
