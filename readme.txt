@@ -106,3 +106,57 @@ kbps Mbps Gbps
 6G 1Tbps
 AI5 2 peta ops
 RTX 5090 3.352 peta flops (fp4)
+
+---
+
+1GHz 1 billion 1e9
+
+64 EUs
+
+1 peta  = 100 million * 10 million
+10 peta = 100 million * 100 million
+
+100 million 1e8 memory UINT32 (400MB)
+100 million 1e8 loop - 45 operations + 9 (in systolic array but not scalar GPU with data type)
+
+systolic array
+54 operations
+  45 operations
+    27 multiplications (9 * 3)
+    18 additions (9 * 2)
+  9 operations
+    9 additions
+
+1 clock cycle
+memory look up table - both take space
+transistor based functional logic - both take space
+
+DRAM bit is stored using one transistor and one capacitor
+A 32-bit adder, built using ripple-carry architecture, requires 896 transistors
+
+LOAD/STORE or MOV - memory
+ALU - multiply or add - functional logic
+
+1.25GHz5
+
+10 peta with GPU with memory access
+4.5GHz * 8 cores billion per second if CPU
+
+scalar
+1D array
+2D matrix AI software
+3D n^3
+    i=0; i<n; i++
+      j=0; j<n; j++
+        k=0; k<n; k++
+
+NPU TPU
+AI accelerator
+inference processor
+
+AI
+machine learning
+neural networks
+computer vision
+robotics
+algorithms
