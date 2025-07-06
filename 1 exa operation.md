@@ -18,7 +18,7 @@ over 400MB deallocated
 ![](https://raw.githubusercontent.com/khalidjshaikh/20250615-opencl/refs/heads/main/images/Screenshot%202025-07-06%20112950.png)
 
 Microsoft PowerShell Python Output
-![](https://raw.githubusercontent.com/khalidjshaikh/20250615-opencl/refs/heads/main/images\Screenshot%202025-07-06%20120321.png)
+![](https://raw.githubusercontent.com/khalidjshaikh/20250615-opencl/refs/heads/main/images/Screenshot%202025-07-06%20120321.png)
 
 [Source code](1%20exa%20operation.py) 1e8 loop with 1e8 global size.  1 exa operation.
 
